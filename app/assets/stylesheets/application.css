@@ -27,6 +27,7 @@ body {
 	border:2px solid rgb(52, 152, 219) !important;
 	border-radius: 0 !important;
 	text-transform: uppercase;
+	padding:20px;
 }
 
 .btn-submit {
@@ -45,7 +46,7 @@ a.careerurl:hover, a.careerurl:focus {
 }
 
 h1 {
-	color: #999 !important;
+	color: #000 !important;
 	font-size:1.8em !important;
 }
 
