@@ -15,7 +15,7 @@
  */
 
 body {
-	background-color: rgb(236, 240, 241) !important;
+	background-color: #f9f9f9 !important;
 }
 
 * {
@@ -45,7 +45,7 @@ a.careerurl:hover, a.careerurl:focus {
 }
 
 h1 {
-	color: rgb(127, 140, 141) !important;
+	color: #999 !important;
 	font-size:1.8em !important;
 }
 
