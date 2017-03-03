@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1 style="display:inline">Fast 50 Tech Careers</h1><a href="https://twitter.com/intent/tweet?text=Hello%20world" class="btn btn-custom" style="display:inline;float:right;" target="_blank"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Share</a>
+<p style="clear:both;padding-top:40px">Originally a <a href="https://docs.google.com/spreadsheets/d/1QHaeSShdiYFxDuHAKyHV1bJOTARb1k2Y-5T33CzxskU/edit#gid=0" target="blank">google sheet</a> designed to scratch-my-own-itch during a job search. Bored of picking <b>great jobs & companies</b> from terrible job boards I decided to start storing the career pages of great companies, starting with the Deloitte Fast 50 winners. Hopefully this will help a few of you and save some time, if people like it enough I might build it into an actual job board.</p>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Company</th>
+      <!-- <th>Sector ranking</th> -->
+      <th>Region</th>
+      <!-- <th>Growth perc</th> -->
+      <th>Sector</th>
+      <th></th>
+      <!-- <th colspan="3"></th> -->
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @companies.each do |company| %>
+      <tr>
+        <td><b><%= company.ranking %></b></td>
+        <td><%= company.name %></td>
+        <!-- <td><%= company.sector_ranking %></td> -->
+        <td><%= company.region %></td>
+        <!-- <td><%= company.growth_perc %></td> -->
+        <td><%= company.sector %></td>
+        <td><a href="<%= company.career_url %>" target="blank" class="careerurl">Careers</a></td>
+        <!-- <td><%= link_to 'Show', company %></td>
+        <td><%= link_to 'Edit', edit_company_path(company) %></td>
+        <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+

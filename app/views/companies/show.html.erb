@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @company.name %>
+</p>
+
+<p>
+  <strong>Ranking:</strong>
+  <%= @company.ranking %>
+</p>
+
+<p>
+  <strong>Sector ranking:</strong>
+  <%= @company.sector_ranking %>
+</p>
+
+<p>
+  <strong>Region:</strong>
+  <%= @company.region %>
+</p>
+
+<p>
+  <strong>Growth perc:</strong>
+  <%= @company.growth_perc %>
+</p>
+
+<p>
+  <strong>Sector:</strong>
+  <%= @company.sector %>
+</p>
+
+<p>
+  <strong>Career url:</strong>
+  <%= @company.career_url %>
+</p>
+
+<%= link_to 'Edit', edit_company_path(@company) %> |
+<%= link_to 'Back', companies_path %>
